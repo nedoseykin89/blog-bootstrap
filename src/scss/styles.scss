@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+@import 'bootstrap/bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'animate';
+
+html {
+    font-size: .9em;
+}
+body {
+    background-color: #ebebeb;
+}
+.container {
+    position: relative;
+}
+.container:before {
+    content: "";
+    background-image: url(/img/Layer.png);
+    background-size: 350px 350px; 
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: -100px;
+    left: -250px;
+    z-index: -1;
+}
+.container:after {
+    content: "";
+    background-image: url(/img/right.png);
+    background-size: 100%; 
+    background-repeat: space;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    bottom: 100px;
+    right: -20px;
+    margin-right: 0;
+    padding-right: 0;
+}
+h3 {
+    text-transform: uppercase;
+}
+.search {
+    border-radius: 0;
+}
+
+.caption-delta {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: -43px;
+      
+        border: 21.9px solid transparent;
+        border-bottom-color: $info-dark;
+        border-left-color: $info-dark;
+    }
+}
+.triangle {
+    position: relative;
+    padding: 5px; 
+    &:before {
+       content: '';
+       left: -10px;
+       top: .7em;
+       width: 0;
+       height: 0;
+       border-style: solid;
+       border-width: 7px;
+       border-color: transparent transparent transparent $info-dark;
+       position: absolute;
+    }
+}
+.comment-line {
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    &:after {
+        content: '';
+        width: 88%;
+        border-top: 1px solid $gray-400;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 50%;
+    }
+}
+
+.comment-line2 {
+    position: relative;
+    z-index: 1;
+    padding-left: 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: right;
+    
+    &:after {
+        content: '';
+        width: 80%;
+        border-top: 1px solid $gray-400;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 50%;
+    }
+}
+#tagcloud a:hover {
+    opacity: .7;
+}
+.date {
+    position: absolute;
+    left: -5%;
+    top: 1.2%;
+    
+    @media screen and (max-width: 896px) {
+        display: none;
+     }
+
+}
