@@ -15,7 +15,7 @@ body {
 }
 .container:before {
     content: "";
-    background-image: url(/img/Layer.png);
+    background-image: url(../img/Layer.png);
     background-size: 350px 350px; 
     width: 350px;
     height: 350px;
@@ -26,7 +26,7 @@ body {
 }
 .container:after {
     content: "";
-    background-image: url(/img/right.png);
+    background-image: url(../img/right.png);
     background-size: 100%; 
     background-repeat: space;
     width: 20px;
