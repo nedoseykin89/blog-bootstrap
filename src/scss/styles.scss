@@ -43,7 +43,10 @@ h3 {
 .search {
     border-radius: 0;
 }
-
+header {
+    position: relative;
+    overflow: hidden;
+}
 .caption-delta {
     position: relative;
     &:after {
